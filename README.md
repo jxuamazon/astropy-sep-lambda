@@ -11,8 +11,8 @@ It has been updated to use Python 3.6 and a newer version of the Amazon Linux im
 To build the zipfile, pull the Amazon Linux image and run the build script in it.
 
 ```
-$ docker pull amazonlinux:2018.03
-$ docker run -v $(pwd):/outputs -it amazonlinux:2018.03 /bin/bash /outputs/build.sh
+$ docker pull amazonlinux
+$ docker run -v $(pwd):/outputs -it amazonlinux /bin/bash /outputs/build.sh
 ```
 
 That will make a file called `venv.zip` in the local directory that's around 50MB.

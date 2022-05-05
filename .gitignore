@@ -1,0 +1,8 @@
+__pycache__
+*.zip
+sklearn_build/
+venv/
+.vscode/
+.DS_Store
+packages/
+local_dev/

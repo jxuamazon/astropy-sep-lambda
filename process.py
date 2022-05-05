@@ -306,3 +306,6 @@ def handler(event, context):
     detect_with_sep(event)
     clean_up()
 
+if __name__ == '__main__':
+    handler({"s3_output_bucket": "jxudemo", "fits_s3_key":"hst/public/icsc/icsca0voq/icsca0voq_drz.fits", "fits_s3_bucket":"stpubdata"}, '')
+
