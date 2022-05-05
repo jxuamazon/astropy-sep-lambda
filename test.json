@@ -1,5 +1,5 @@
 {
     "fits_s3_key": "hst/public/icsc/icsca0voq/icsca0voq_drz.fits",
     "fits_s3_bucket": "stpubdata",
-    "s3_output_bucket": "stsci-workshop-jxu-event-engine"
+    "s3_output_bucket": "<output_bucket>"
 }
