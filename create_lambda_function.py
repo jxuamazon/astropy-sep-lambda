@@ -19,7 +19,7 @@ client = session.client('lambda', region_name='us-east-1')
 # The Role needs to have the AWSLambdaFullAccess permission policies attached
 # 'your-s3-bucket' is the S3 bucket you've uploaded the `venv.zip` file to
 response = client.create_function(
-    FunctionName='SEPFunction1',
+    FunctionName='SEPFunction',
     Runtime='python3.7',
     Role=exec_role_arn, # <- Update this with your IAM role name
     Handler='process.handler',
