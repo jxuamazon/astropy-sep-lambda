@@ -262,7 +262,10 @@ def detect_with_sep(
     f.savefig(f"/tmp/{basename}.png")
 
     # Write the catalog to local disk
-    catalog.write(f"/tmp/{basename}.catalog.fits", format='fits')
+    temp_f = f"/tmp/{basename}.catalog.fits"
+    if os.path.exists(temp_f):
+        os.remove(temp_f)
+    catalog.write(temp_f, format='fits')
 
     # Write out to S3
     s3 = boto3.resource('s3')
